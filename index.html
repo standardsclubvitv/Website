@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standards Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">
+            <img src="./logo.png" alt="Standards Club Logo">
+        </div>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#board">Board Members</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Welcome to Standards Club</h1>
+            <p>Setting the gold standard in excellence and innovation</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-title">
+            <h2>About Standards Club</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>The Standards Club is a prestigious organization affiliated with BIS standards, dedicated to
+                    promoting excellence, innovation, and best practices across industries. Our mission is to create a
+                    community of professionals committed to upholding the highest standards in their respective fields.
+                </p>
+                <p>Founded on principles of quality, integrity, and continuous improvement, our club serves as a
+                    platform for knowledge sharing, networking, and professional growth. Through various initiatives,
+                    events, and collaborations, we aim to elevate industry standards and foster a culture of excellence.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="https://i.imgur.com/uYqT7vL.png" alt="Standards Club">
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="section-title">
+            <h2>Events</h2>
+            <div class="underline"></div>
+        </div>
+
+        <!-- Events Tabs -->
+        <div class="events-container">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'upcoming')">Upcoming Events</button>
+                <button class="tab-btn" onclick="openTab(event, 'past')">Past Events</button>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div id="upcoming" class="tab-content active">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Jun</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Annual Standards Summit 2025</h3>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Grand Convention Center</p>
+                        <p class="event-meta"><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</p>
+                        <p>Join us for our flagship event featuring keynote speakers, panel discussions, and networking
+                            opportunities focused on emerging standards in technology and business.</p>
+                        <a href="./server.html" class="btn-small golden-btn"><strong>REGISTER</strong></a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">28</span>
+                        <span class="month">Jun</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Standardization Workshop</h3>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Tech Innovation Hub</p>
+                        <p class="event-meta"><i class="fas fa-clock"></i> 10:00 AM - 3:00 PM</p>
+                        <p>A hands-on workshop focusing on implementing standards in organizational processes and
+                            quality management systems.</p>
+                        <a href="./server.html" class="btn-small golden-btn"><strong>REGISTER</strong></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Past Events -->
+
+
+
+            <div id="past" class="tab-content">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">17</span>
+                        <span class="month">Apr</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Standard Showdown</h3>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Online (Google Forms)</p>
+                        <p class="event-meta"><i class="fas fa-clock"></i> 10:00 PM - 10:30 PM</p>
+                        <p>Presented by VIT Office of Students' Welfare Standards Club. Event Coordinator: Akshaya Ashok
+                            Nair (Contact: 70127 55526)</p>
+                        <a href="./server.html" class="btn-small golden-btn"><strong>Results</strong></a>
+
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">28</span>
+                        <span class="month">Feb</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Standards Unplugged</h3>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> VIT (Vellore Institute of
+                            Technology)</p>
+                        <p class="event-meta"><i class="fas fa-trophy"></i> Prize Pool: Rs. 10,000</p>
+                        <p class="event-meta"><i class="fas fa-award"></i> 1st: Rs. 4,000 | 2nd: Rs. 3,000 | 3rd: Rs.
+                            2,000 | 4th: Rs. 1,000</p>
+                        <p>An exciting event presented by VIT Standards Club under the Office of Students' Welfare.</p>
+                        <a href="./server.html" class="btn-small golden-btn"><strong>Results</strong></a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">28</span>
+                        <span class="month">Sep</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Standards Cam Hack Using Fusion</h3>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> VIT (Vellore Institute of
+                            Technology)</p>
+                        <p class="event-meta"><i class="fas fa-clock"></i> graVITas'24 Event</p>
+                        <p>A hackathon event powered by Autodesk, featuring a 50K prize pool. Organized by the Standards
+                            Club under the Office of Students' Welfare.</p>
+                        <a href="./server.html" class="btn-small golden-btn"><strong>Results</strong></a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">19-20</span>
+                        <span class="month">Sep</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Fusion of CAM & Standards</h3>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> VIT (Vellore Institute of
+                            Technology)</p>
+                        <p class="event-meta"><i class="fas fa-clock"></i> 2 Day Workshop - graVITas'24</p>
+                        <p>Explore the synergies between CAM and standards, learning how to enhance precision,
+                            efficiency, and compliance in manufacturing processes. Learn Fusion 360 from experts from
+                            Autodesk and earn official certificates.</p>
+                        <p class="event-meta"><i class="fas fa-info-circle"></i> "Grab your seat before they fill up!"
+                        </p>
+                        <a href="./server.html" class="btn-small golden-btn"><strong>Results</strong></a>
+                    </div>
+                </div>
+
+                <div class="event-card"> 
+  <div class="event-date"> 
+    <span class="day">7</span> 
+    <span class="month">Oct</span> 
+    <span class="year">2024</span>
+  </div> 
+  <div class="event-details"> 
+    <h3>Short Film Making Competition</h3>
+    <h4>For Promoting Standards</h4>
+    <p class="event-meta"><i class="fas fa-map-marker-alt"></i> TT VOC Gallery, VIT</p>
+    <p class="event-meta"><i class="fas fa-clock"></i> 8:00 AM - 1:00 PM</p>
+    <p class="event-meta"><i class="fas fa-users"></i> Teams of up to 5 members are allowed</p>
+    <p class="event-meta"><i class="fas fa-trophy"></i> Prize Pool: ₹10,000</p>
+    <div class="prize-breakdown">
+      <div class="prize-item"><span class="position">1st:</span> ₹4,000/-</div>
+      <div class="prize-item"><span class="position">2nd:</span> ₹3,000/-</div>
+      <div class="prize-item"><span class="position">3rd:</span> ₹2,000/-</div>
+      <div class="prize-item"><span class="position">Consolation:</span> ₹1,000/-</div>
+    </div>
+    
+    <div class="rules-section">
+      <h5>Rules:</h5>
+      <ul>
+        <li>The film must be between 45 seconds to 5 minutes long</li>
+        <li>The film should focus on the importance of standards in any context (business, society, technology, etc.)</li>
+        <li>It should be original work, and films must be submitted at least 24 hours before the screening (06-10-2024)</li>
+      </ul>
+      
+      <h5>Judging Criteria:</h5>
+      <ul>
+        <li>Creativity, technical quality, relevance to the theme, and storytelling</li>
+        <li>Judging will be done from panels of both clubs</li>
+      </ul>
+    </div>
+    
+    <p class="event-meta"><i class="fas fa-user"></i> Event Coordinator: GIRIDHAR: +91 813 700 9468</p>
+    <p class="event-meta"><i class="fas fa-envelope"></i> standardsclub@vit.ac</p>
+    
+    <div class="register-info">
+      <p>REGISTER ON VTOP & fill the form</p>
+      <a href="./server.html" class="btn-small golden-btn"><strong>Results</strong></a>
+    </div>
+  </div> 
+</div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Board Members Section -->
+    <!-- Board Members Section -->
+    <section id="board" class="board">
+        <div class="section-title">
+            <h2>Board Members</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="board-container">
+            <!-- Executive Members -->
+            <div class="board-row">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="./Giri1.JPG" alt="Giridhar R">
+                            </div>
+                            <h3>Giridhar R</h3>
+                            <p>Chairperson</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Giridhar R</h3>
+                            <p>Chairperson</p>
+                            <p>Leading the Standards Club with vision and expertise in quality management systems.</p>
+                            <a href="https://www.linkedin.com/in/giridhar-r-a68404293/" target="_blank"
+                                class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="/api/placeholder/120/120" alt="Navyatha">
+                            </div>
+                            <h3>Navyatha</h3>
+                            <p>Vice Chairperson</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Navyatha</h3>
+                            <p>Vice Chairperson</p>
+                            <p>Bringing extensive experience in standards implementation and compliance strategies.</p>
+                            <a href="https://www.linkedin.com/" target="_blank" class="social-icon"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="./Antony Paul.jpg" alt="Antony Paul">
+                            </div>
+                            <h3>Antony Paul</h3>
+                            <p>Secretary</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Antony Paul</h3>
+                            <p>Secretary</p>
+                            <p>Coordinating club activities and ensuring smooth operations with meticulous attention to
+                                detail.</p>
+                            <a href="https://www.linkedin.com/in/antony-paul-61b1a2255/" target="_blank"
+                                class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="/api/placeholder/120/120" alt="J Siddharth">
+                            </div>
+                            <h3>J Siddharth</h3>
+                            <p>Co Secretary</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>J Siddharth</h3>
+                            <p>Co Secretary</p>
+                            <p>Supporting club initiatives and administrative functions with dedication and efficiency.
+                            </p>
+                            <a href="https://www.linkedin.com/in/siddharthjaisankar/" target="_blank"
+                                class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Department Heads -->
+            <div class="board-row">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="./Pranav Rayban.jpg" alt="Pranav Rayban">
+                            </div>
+                            <h3>Pranav Rayban</h3>
+                            <p>Development Head</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Pranav Rayban</h3>
+                            <p>Development Head</p>
+                            <p>Creating and maintaining the club's digital presence with innovative web solutions.</p>
+                            <a href="https://www.linkedin.com/in/pranav-rayban-vit2027/" target="_blank"
+                                class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="/api/placeholder/120/120" alt="Ananthu Suresh">
+                            </div>
+                            <h3>Ananthu Suresh</h3>
+                            <p>Design Head</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Ananthu Suresh</h3>
+                            <p>Design Head</p>
+                            <p>Creating visual identities and design solutions that elevate the club's presence.</p>
+                            <a href="https://www.linkedin.com/" target="_blank" class="social-icon"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="/api/placeholder/120/120" alt="Akshaya Ashok Nair">
+                            </div>
+                            <h3>Akshaya Ashok Nair</h3>
+                            <p>Events Head</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Akshaya Ashok Nair</h3>
+                            <p>Events Head</p>
+                            <p>Orchestrating memorable events that foster learning, networking, and community
+                                engagement.</p>
+                            <a href="https://www.linkedin.com/" target="_blank" class="social-icon"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="/api/placeholder/120/120" alt="Amrith Raj">
+                            </div>
+                            <h3>Amrith Raj</h3>
+                            <p>Management Head</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Amrith Raj</h3>
+                            <p>Management Head</p>
+                            <p>Ensuring efficient operations and strategic management of club resources and initiatives.
+                            </p>
+                            <a href="https://www.linkedin.com/in/amrith-raj-885742255/" target="_blank"
+                                class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Board Members -->
+            <div class="board-row">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="./Shashanka Bhat.JPG" alt="Shashanka Bhat">
+                            </div>
+                            <h3>Shashanka Bhat</h3>
+                            <p>Projects Head</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Shashanka Bhat</h3>
+                            <p>Projects Head</p>
+                            <p>Leading innovative projects that advance the club's mission and impact.</p>
+                            <a href="https://www.linkedin.com/in/shashanka-bhat-181b68262/" target="_blank"
+                                class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="./Sashank.JPG" alt="Sasshank">
+                            </div>
+                            <h3>Sasshank</h3>
+                            <p>Technical Head</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Sasshank</h3>
+                            <p>Technical Head</p>
+                            <p>Providing technical expertise and solutions for the club's digital presence and
+                                initiatives.</p>
+                            <a href="https://www.linkedin.com/in/sasshank-anand-7b47a4345/" target="_blank"
+                                class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="./Eshal Shanoj.JPG" alt="Eshal Shanoj">
+                            </div>
+                            <h3>Eshal Shanoj</h3>
+                            <p>HR Head</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Eshal Shanoj</h3>
+                            <p>HR Head</p>
+                            <p>Managing member relations and fostering a collaborative club culture.</p>
+                            <a href="https://www.linkedin.com/in/eshal-shanoj-326515276/" target="_blank"
+                                class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="/api/placeholder/120/120" alt="Vinayak C Nair">
+                            </div>
+                            <h3>Vinayak C Nair</h3>
+                            <p>Outreach Head</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Vinayak C Nair</h3>
+                            <p>Outreach Head</p>
+                            <p>Expanding the club's network and fostering meaningful partnerships and collaborations.
+                            </p>
+                            <a href="https://www.linkedin.com/in/vinayak-c-nair-142ba7269/" target="_blank"
+                                class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Board Members Row -->
+            <div class="board-row">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="/api/placeholder/120/120" alt="Shikha">
+                            </div>
+                            <h3>Shikha</h3>
+                            <p>Editorial Head</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Shikha</h3>
+                            <p>Editorial Head</p>
+                            <p>Curating and producing high-quality content that reflects the club's values and
+                                expertise.</p>
+                            <a href="https://www.linkedin.com/" target="_blank" class="social-icon"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="/api/placeholder/120/120" alt="Indrajit TV">
+                            </div>
+                            <h3>Indrajit TV</h3>
+                            <p>Creative Head</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Indrajit TV</h3>
+                            <p>Creative Head</p>
+                            <p>Driving innovative content and creative strategies for the club's initiatives.</p>
+                            <a href="https://www.linkedin.com/in/indrajit-tv-i0000n000/" target="_blank"
+                                class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="./Devadutt.JPG" alt="Devadutt">
+                            </div>
+                            <h3>Devadutt</h3>
+                            <p>Finance Head</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Devadutt</h3>
+                            <p>Finance Head</p>
+                            <p>Managing the club's financial resources with transparency and strategic planning.</p>
+                            <a href="https://www.linkedin.com/" target="_blank" class="social-icon"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="member-img">
+                                <img src="./Archa.JPG" alt="Archa">
+                            </div>
+                            <h3>Archa</h3>
+                            <p>Publicity Head</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Archa</h3>
+                            <p>Publicity Head</p>
+                            <p>Promoting the club's initiatives and enhancing its visibility through strategic
+                                communications.</p>
+                            <a href="https://www.linkedin.com/in/archa-ajesh-k-02a694304/" target="_blank"
+                                class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="section-title">
+            <h2>Latest from our Blog</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="blog-container">
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="/api/placeholder/800/500" alt="Blog Image">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">May 5, 2025</span>
+                    <h3>The Evolution of Quality Standards in Industry 5.0</h3>
+                    <p>Exploring how quality standards are adapting to the fifth industrial revolution and the
+                        integration of human-machine collaboration.</p>
+                    <a href="./server.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="/api/placeholder/800/500" alt="Blog Image">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">April 22, 2025</span>
+                    <h3>Standardization in Sustainable Development</h3>
+                    <p>How standards are shaping sustainable practices and contributing to global environmental goals.
+                    </p>
+                    <a href="./server.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="/api/placeholder/800/500" alt="Blog Image">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">April 10, 2025</span>
+                    <h3>The Role of AI in Standards Compliance</h3>
+                    <p>Examining how artificial intelligence is revolutionizing the way organizations approach standards
+                        compliance and quality management.</p>
+                    <a href="./server.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>VIt Vellore - 632014</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>standardsclub@vit.ac.in</p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./logo.png" alt="Standards Club Logo">
+                <p>Setting the gold standard in excellence</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#board">Board</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn-small">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Standards Club. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
