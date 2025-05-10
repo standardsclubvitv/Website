@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIS Standards Club - Privacy Policy</title>
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #0066cc;
+            --accent: #ff9900;
+            --light: #f5f5f5;
+            --dark: #333333;
+            --text: #444444;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo-placeholder {
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        
+        nav {
+            background-color: var(--primary);
+            padding: 0.5rem 1rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0.5rem 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 1.6rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+        }
+        
+        p, ul, ol {
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            padding-left: 2rem;
+        }
+        
+        .highlight {
+            background-color: rgba(255, 153, 0, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav ul {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul.show {
+                display: flex;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
+            
+            h3 {
+                font-size: 1.2rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        <div class="logo-placeholder">BIS</div>
+        <h1>BIS Standards Club - Privacy Policy</h1>
+        <p>Standards Hackathon – Gravitas 2025</p>
+    </header>
+    
+    <nav id="mainNav">
+        <ul id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section class="section">
+            <h2>Privacy Policy</h2>
+            <p>Last Updated: May 10, 2025</p>
+            
+            <div class="highlight">
+                <p>This Privacy Policy outlines how BIS Standards Club, VIT Vellore collects, uses, and protects personal information during the Standards Hackathon - Gravitas 2025 event.</p>
+            </div>
+            
+            <h3>1. Information We Collect</h3>
+            <p>For the Standards Hackathon event, we collect the following information from participants:</p>
+            <ul>
+                <li>Full name</li>
+                <li>VIT registration number</li>
+                <li>Email address</li>
+                <li>Contact number</li>
+                <li>School/Department information</li>
+                <li>Team name and details</li>
+                <li>Project submissions including code, documentation, and presentations</li>
+            </ul>
+            
+            <h3>2. Registration Information</h3>
+            <p>As mentioned in the event details:</p>
+            <ul>
+                <li>All registrations will be conducted through VTOP (VIT's official portal)</li>
+                <li>Registration links will be shared through official BIS Standards Club channels</li>
+                <li>Team formation information will be collected prior to registration</li>
+            </ul>
+            
+            <h3>3. How We Use Your Information</h3>
+            <p>The information collected will be used for:</p>
+            <ul>
+                <li>Processing event registrations</li>
+                <li>Team formation and track assignment</li>
+                <li>Communication regarding event details, schedule changes, and announcements</li>
+                <li>Evaluation and judging of submitted projects</li>
+                <li>Prize distribution and certification</li>
+                <li>Academic and research purposes related to the event</li>
+                <li>Documentation of the event for BIS and VIT records</li>
+            </ul>
+            
+            <h3>4. Data Sharing</h3>
+            <p>Your information may be shared with:</p>
+            <ul>
+                <li>Bureau of Indian Standards (BIS), Chennai - our event partner</li>
+                <li>VIT Vellore faculty members serving as jury and mentors</li>
+                <li>Event coordinators and organizers</li>
+            </ul>
+            <p>We will not share your personal information with any other third parties without your consent.</p>
+            
+            <h3>5. Project Submissions</h3>
+            <p>All hackathon submissions including code, designs, presentations, and documentation:</p>
+            <ul>
+                <li>Will be evaluated by the jury panel consisting of faculty members from VIT</li>
+                <li>May be featured in BIS Standards Club publications, website, and social media</li>
+                <li>May be showcased at future events and educational purposes</li>
+                <li>Will be governed by intellectual property terms specified in our Terms & Conditions</li>
+            </ul>
+            
+            <h3>6. Photography and Recording</h3>
+            <p>By participating in the Standards Hackathon, you acknowledge and consent to:</p>
+            <ul>
+                <li>Being photographed and recorded during the event</li>
+                <li>Having your image, voice, and participation featured in promotional materials</li>
+                <li>Having your presentations and demonstrations recorded for documentation</li>
+            </ul>
+            
+            <h3>7. Data Security</h3>
+            <p>We implement appropriate security measures to protect your personal information:</p>
+            <ul>
+                <li>All registration data is processed through VTOP, VIT's secure portal</li>
+                <li>Access to participant information is restricted to authorized personnel</li>
+                <li>Project submissions are securely stored and backed up</li>
+            </ul>
+            
+            <h3>8. Data Retention</h3>
+            <p>We will retain your information for:</p>
+            <ul>
+                <li>The duration of the event and post-event follow-up</li>
+                <li>A reasonable period required for documentation and reporting</li>
+                <li>As required by VIT policies and academic records</li>
+            </ul>
+            
+            <h3>9. Your Rights</h3>
+            <p>As a participant, you have the right to:</p>
+            <ul>
+                <li>Access your personal information</li>
+                <li>Request correction of inaccurate information</li>
+                <li>Request deletion of your information after the event (subject to record-keeping requirements)</li>
+                <li>Opt-out of future communications</li>
+            </ul>
+            
+            <h3>10. Contact Information</h3>
+            <p>For privacy-related inquiries, please contact:</p>
+            <p>Event Coordinator: Pranav Rayban (Development Head, VIT Standards Club)</p>
+            <p>Faculty Advisor: Ms. Padma Priya R (padmapriya.r@vit.ac.in)</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2025 BIS Standards Club, VIT Vellore. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('show');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const nav = document.getElementById('mainNav');
+            const mobileBtn = document.getElementById('mobileMenuBtn');
+            
+            if (!nav.contains(event.target) && event.target !== mobileBtn) {
+                document.getElementById('navMenu').classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
